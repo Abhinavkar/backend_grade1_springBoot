@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.lang.reflect.Constructor;
+import java.util.Locale;
 
 @Entity
 
@@ -22,6 +23,8 @@ public class Student {
     private String name;
     private Integer age;
     private int rollNo ;
+    private Locale Date ;
+
 
     public Student(Long id, String name, Integer age, int rollNo) {
         this.id = id;
